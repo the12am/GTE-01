@@ -8,7 +8,7 @@
 extends CharacterBody2D
 
 ## export refers to making a variable of your choice available in the inpector tab to the right
-## here we export the variable "speed" which is reprsented by an integer, this will be referenced later
+## here we export the variable "speed" which is represented by an integer, this will be referenced later
 @export var speed: int = 35
 
 ## onready is a shorthand for assigning a variable within the ready function, the expanded version can be seen below. vvv
@@ -17,6 +17,7 @@ extends CharacterBody2D
 ##var animations 
 ##func _ready() -> void:
 ##	animations = $AnimationPlayer
+## this line creates a variable named animations and assigns it to the AnimatedSprite2D node named AnimationPlayer, which contains frame data for each up, down, left, and right animations
 @onready var animations = $AnimationPlayer
 
 ## func refers to function, or a block of organized reusable code that is used to perform a single related task/action

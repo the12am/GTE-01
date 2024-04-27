@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1714175231
+::res://::1714184865
 icon.svg::CompressedTexture2D::645327174675928525::1714172698::1714172720::1::::<><>::
 README.md::TextFile::-1::1714174897::0::1::::<><>::
 ::res://art/::1714174944
@@ -8,12 +8,12 @@ SpriteSheet16x16.png::CompressedTexture2D::8176816242651854::1714172698::1714172
 SpriteSheet.png::CompressedTexture2D::5791848847574674287::1714172698::1714172720::1::::<><>::
 TilesetFloor.png::CompressedTexture2D::8062247517524812358::1714172698::1714172720::1::::<><>::
 TilesetNature.png::CompressedTexture2D::5677107823441455543::1714172698::1714172720::1::::<><>::
-::res://enemies/::1714174944
+::res://enemies/::1714176386
 slime.gd::GDScript::-1::1714172698::0::1::::<>CharacterBody2D<>::
-slime.tscn::PackedScene::6591422226694836086::1714174750::0::1::::<><>::uid://ceobw76stjnbt::::res://art/Slime.png<>res://enemies/slime.gd
-::res://player/::1714174944
+slime.tscn::PackedScene::6591422226694836086::1714176386::0::1::::<><>::uid://ceobw76stjnbt::::res://art/Slime.png<>res://enemies/slime.gd
+::res://player/::1714176386
 player.gd::GDScript::-1::1714173058::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::1191299626173843735::1714174750::0::1::::<><>::uid://coru50nnfy056::::res://art/SpriteSheet.png<>res://player/player.gd
-::res://scenes/::1714174944
-follow cam.gd::GDScript::-1::1714172698::0::1::::<>Camera2D<>::
-world.tscn::PackedScene::4329001263892339454::1714174750::0::1::::<><>::uid://q8csbuiq6i5d::::res://player/player.tscn<>uid://dm4obk0iiyto5::::res://art/TilesetFloor.png<>uid://cm5bevxx7bmgt::::res://art/TilesetNature.png<>uid://d7w2v04bk8m::::res://art/SpriteSheet16x16.png<>res://scenes/follow cam.gd<>uid://c056041q7vvdu::::res://enemies/slime.tscn
+player.tscn::PackedScene::1191299626173843735::1714176386::0::1::::<><>::uid://coru50nnfy056::::res://art/SpriteSheet.png<>res://player/player.gd
+::res://scenes/::1714176386
+follow cam.gd::GDScript::-1::1714176381::0::1::::<>Camera2D<>::
+world.tscn::PackedScene::4329001263892339454::1714176386::0::1::::<><>::uid://q8csbuiq6i5d::::res://player/player.tscn<>uid://dm4obk0iiyto5::::res://art/TilesetFloor.png<>uid://cm5bevxx7bmgt::::res://art/TilesetNature.png<>uid://d7w2v04bk8m::::res://art/SpriteSheet16x16.png<>res://scenes/follow cam.gd<>uid://c056041q7vvdu::::res://enemies/slime.tscn
