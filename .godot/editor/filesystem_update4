@@ -1,6 +1,2 @@
-res://scenes/world.tscn
-res://scenes/follow cam.gd
-res://player/player.gd
-res://enemies/slime.gd
-res://player/player.tscn
 res://enemies/slime.tscn
+res://README.md
