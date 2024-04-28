@@ -1,2 +1,4 @@
 res://enemies/slime.tscn
-res://README.md
+res://enemies/slime.gd
+res://scenes/world.tscn
+res://player/player.tscn
