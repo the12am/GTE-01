@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://q8csbuiq6i5d"]
+[gd_scene load_steps=11 format=3 uid="uid://q8csbuiq6i5d"]
 
 [ext_resource type="Texture2D" uid="uid://coru50nnfy056" path="res://art/SpriteSheet.png" id="1_1ddk0"]
 [ext_resource type="Script" path="res://player/player.gd" id="1_grajf"]
@@ -99,8 +99,13 @@ _data = {
 "walkUp": SubResource("Animation_ykdov")
 }
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_nf0vj"]
-size = Vector2(14, 4)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0161x"]
+radius = 6.0
+height = 16.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_cab1d"]
+radius = 6.0
+height = 14.0
 
 [node name="Player" type="CharacterBody2D"]
 z_index = 1
@@ -120,5 +125,18 @@ libraries = {
 }
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -2)
-shape = SubResource("RectangleShape2D_nf0vj")
+visible = false
+y_sort_enabled = true
+position = Vector2(0, -7)
+shape = SubResource("CapsuleShape2D_0161x")
+
+[node name="hurtBox" type="Area2D" parent="."]
+y_sort_enabled = true
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hurtBox"]
+y_sort_enabled = true
+position = Vector2(0, -7)
+shape = SubResource("CapsuleShape2D_cab1d")
+
+[connection signal="area_entered" from="hurtBox" to="." method="_on_hurt_box_area_entered"]

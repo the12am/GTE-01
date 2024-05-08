@@ -1,4 +1,4 @@
-res://enemies/slime.tscn
-res://enemies/slime.gd
 res://scenes/world.tscn
 res://player/player.tscn
+res://enemies/slime.tscn
+res://player/player.gd

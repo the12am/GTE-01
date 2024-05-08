@@ -61,9 +61,22 @@ func updateAnimation():
 ## When an operator enters "w" to walk up, the direction variable changes to up since the elif condition is met, therefore the animations.play becomes "walkUp" which is a defined player animation against the node "Player"
 		animations.play("walk" + direction)
 		
+		
+## this function is used to handle collision
+func handleCollision():
+	for i in get_slide_collision_count():
+		var collision = get_slide_collision(i)
+		var collider = collision.get_collider()
+		print_debug(collider.name)
+
 ## this function is simply calling other functions and looping them consistently since there is no if/else statements, it simply runs as a constant. If we do not call these functions they will not actually work other than once they are called on initilization.
 ## handleInput and updateAnimation are functions we have defined above, updateAnimation is a built in function/native functionality.
 func _physics_process(_delta):
 	handleInput()
 	move_and_slide()
+	handleCollision()
 	updateAnimation()
+
+func _on_hurt_box_area_entered(area):
+	if area.name == "hitBox":
+		print_debug(area.get_parent().name)
